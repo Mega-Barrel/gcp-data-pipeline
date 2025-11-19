@@ -1,3 +1,3 @@
-# Simple PySpark Pipeline using GCP Components
+# GCP Data Pipelines
 
-Repository for PySpark pipeline using GCP
+Repository for various data pipelines using GCP components
