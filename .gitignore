@@ -1,0 +1,12 @@
+
+# cache file
+__pycache__
+
+# credentials
+.env
+
+# Env Folder
+env
+
+# GCP Credentials
+credentials.json
