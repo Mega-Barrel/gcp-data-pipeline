@@ -1,0 +1,36 @@
+2025-11-20 21:21:08,433 - data-pipeline - INFO - Starting GCP Data Pipeline...
+2025-11-20 21:21:08,861 - data-pipeline - INFO - Last processed date: 2025-11-20
+2025-11-20 21:21:08,861 - data-pipeline - INFO - Data for 2025-11-20 already processed. Skipping.
+2025-11-20 21:21:08,861 - data-pipeline - INFO - Step 1: Ingestion
+2025-11-20 21:21:08,861 - data-pipeline - INFO - Fetching data from https://dummyjson.com/carts...
+2025-11-20 21:21:09,357 - data-pipeline - INFO - Uploading data to gs://analytics-engineering-101-data-pipeline/raw/carts/carts_raw_2025_11_20.json...
+2025-11-20 21:21:09,757 - data-pipeline - INFO - Upload complete: gs://analytics-engineering-101-data-pipeline/raw/carts/carts_raw_2025_11_20.json
+2025-11-20 21:21:09,757 - data-pipeline - INFO - Ingestion successful.
+2025-11-20 21:21:09,757 - data-pipeline - INFO - Step 2: Transformation
+2025-11-20 21:21:09,757 - data-pipeline - INFO - Reading from gs://analytics-engineering-101-data-pipeline/raw/carts/carts_raw_2025_11_20.json...
+2025-11-20 21:21:10,182 - data-pipeline - INFO - Transformed 121 rows.
+2025-11-20 21:21:10,186 - data-pipeline - INFO - Uploading clean data to gs://analytics-engineering-101-data-pipeline/clean/carts/carts_flattened_2025_11_20.json...
+2025-11-20 21:21:10,263 - data-pipeline - INFO - Upload complete: gs://analytics-engineering-101-data-pipeline/clean/carts/carts_flattened_2025_11_20.json...
+2025-11-20 21:21:10,265 - data-pipeline - INFO - Transformation successful.
+2025-11-20 21:21:10,265 - data-pipeline - INFO - Step 3: Load
+2025-11-20 21:21:10,265 - data-pipeline - INFO - Loading data into BigQuery table analytics-engineering-101.retail_data.mart_carts...
+2025-11-20 21:21:11,198 - data-pipeline - INFO - Dataset retail_data already exists.
+2025-11-20 21:21:11,198 - data-pipeline - INFO - Skipping data loading phase.
+2025-11-20 21:21:13,037 - data-pipeline - INFO - Starting job 7f46419a-473b-418e-bbe8-23acfe487887
+2025-11-20 21:21:26,445 - data-pipeline - INFO - Job finished.
+2025-11-20 21:21:26,833 - data-pipeline - INFO - Loaded 484 rows.
+2025-11-20 21:21:26,833 - data-pipeline - INFO - Load successful.
+2025-11-20 21:21:26,833 - data-pipeline - INFO - Step 4: Update State
+2025-11-20 21:21:26,899 - data-pipeline - INFO - State updated: last_processed_date = 2025-11-20
+2025-11-20 21:21:26,899 - data-pipeline - INFO - Pipeline finished successfully.
+2025-11-20 21:24:58,326 - data-pipeline - INFO - Starting GCP Data Pipeline...
+2025-11-20 21:24:58,873 - data-pipeline - INFO - Last processed date: 2025-11-20
+2025-11-20 21:24:58,873 - data-pipeline - INFO - Data for 2025-11-20 already processed. Skipping.
+2025-11-20 21:27:21,677 - data-pipeline - INFO - --------------------
+2025-11-20 21:27:21,677 - data-pipeline - INFO - Starting GCP Data Pipeline...
+2025-11-20 21:27:22,166 - data-pipeline - INFO - Last processed date: 2025-11-20
+2025-11-20 21:27:22,166 - data-pipeline - INFO - Data for 2025-11-20 already processed. Skipping.
+2025-11-20 21:27:34,815 - data-pipeline - INFO - ------------------------------
+2025-11-20 21:27:34,815 - data-pipeline - INFO - Starting GCP Data Pipeline...
+2025-11-20 21:27:35,299 - data-pipeline - INFO - Last processed date: 2025-11-20
+2025-11-20 21:27:35,299 - data-pipeline - INFO - Data for 2025-11-20 already processed. Skipping.
